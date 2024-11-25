@@ -21,30 +21,11 @@ class TeamsController extends Controller
     public function store(Request $request)
     {
         $newTeams = new Team;
+        $newTeams->id = $request->id;
+        $newTeams->foreignId = $request->foreignid;
         $newTeams->name = $request->name;
-        $newTeams->age = $request->age;
-        $newTeams->email = $request->email;
+        $newTeams->points = $request->points;
         $newTeams->save();
-        return redirect()->route('customers.index');
-    }
-
-    public function edit(Customer $customer)
-    {
-        return view('customers.edit')->with('customer', $customer);
-    }
-
-    public function update(Customer $customer, Request $request)
-    {
-        $customer->name = $request->name;
-        $customer->age = $request->age;
-        $customer->email = $request->email;
-        $customer->save();
-        return redirect()->route('customers.index');
-    }
-
-    public function destroy(Customer $customer)
-    {
-        $customer->delete();
-        return redirect()->route('customers.index');
+        return redirect()->route('teams.index');
     }
 }
