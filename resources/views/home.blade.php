@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ asset('style/style.css') }}" />
     <title>schoolvoetbal</title>
 </head>
 <body>
@@ -12,8 +13,9 @@
             <a href="home">home</a>
             <a href="teams">teams</a>
             <a href="player">//</a>
-            logout
+
         </nav>
+        logout
     </header>
     <main>
         <div class="wrapper">
@@ -28,7 +30,7 @@
                     <li>5</li>
                 </ul>
             </div>
-            <img src="" alt="">
+            <img src={{ asset('style/img/soccerfield.png') }} alt="voetbalVeld">
 
             <a href="wedstrijden">
                 <h2>wedstrijden</h2>

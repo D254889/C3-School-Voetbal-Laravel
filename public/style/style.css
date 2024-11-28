@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(73, 201, 53);
+    color: #fff;
+    text-align: center;
+    border-bottom: #fff 6px solid;
+}
+nav {
+    display: flex;
+    width: 60%;;
+    align-items: center;
+    color: #fff;
+
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    text-decoration: none;
+    color: #fff;
+    width: 30%;
+    border: #fff 6px solid;
+    height: 60px;
+}
+
