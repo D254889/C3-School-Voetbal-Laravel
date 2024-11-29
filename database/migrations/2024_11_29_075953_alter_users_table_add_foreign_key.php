@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('teams', function (Blueprint $table) {
-            $table->id()->unsigned();
-            $table->foreignId('creator_id')->references('id')->on('users');
-            $table->string('name');
-            $table->integer('points');
-            $table->timestamps();
+        Schema::table('users', function($table) {
+            $table->foreignId('team_id')->references('id')->on('teams');
         });
     }
 
@@ -25,6 +21,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('_teams');
+        //
     }
 };
