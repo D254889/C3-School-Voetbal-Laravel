@@ -7,14 +7,14 @@
 header {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(73, 201, 53);
+    background-color: rgb(49, 160, 200);
     color: #fff;
     text-align: center;
     border-bottom: #fff 6px solid;
 }
 nav {
     display: flex;
-    width: 60%;;
+    width: 80%;;
     align-items: center;
     color: #fff;
 
@@ -30,9 +30,16 @@ nav a {
     border: #fff 6px solid;
     height: 60px;
 }
+
+nav img {
+    height: 100%;
+}
+
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .wrapper{
     display: flex;
@@ -44,3 +51,26 @@ img{
     width: 100px;
 }
 
+ul{
+    list-style-type: none;
+}
+
+.publicInfo {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(49, 160, 200);
+    border: #fff 6px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.personalInfo {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(49, 160, 200);
+    border: #fff 6px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}

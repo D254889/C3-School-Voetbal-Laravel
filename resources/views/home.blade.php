@@ -10,26 +10,29 @@
 <body>
     <header>
         <nav>
-            <a href="home">home</a>
+            <a href="">home</a>
             <a href="teams">teams</a>
             <a href="player">//</a>
+            <img src="{{ asset('style/img/logoBlauw.png') }}" alt="">
 
         </nav>
         logout
     </header>
     <main>
-        <div class="puiblicInfo">
-            <div class="wrapper">
-                <h1>School voetbal</h1>
+        <h1>School voetbal</h1>
+        <div class="wrapper">
+
+            <div class="publicInfo">
+
                 <div class="topTeams">
                     <h2>Top 5</h2>
-                    <ul>
+                    <ol>
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
                         <li>4</li>
                         <li>5</li>
-                    </ul>
+                    </ol>
                 </div>
 
 
@@ -45,11 +48,11 @@
                 </a>
             </div>
             <div class="personalInfo">
-                //if logged in
                 <img src={{ asset('style/img/soccerfield.png') }} alt="voetbalVeld">
                 <div class="team">
                     <h2>team</h2>
                     <ul>
+                        <li>player name</li>
                         <li>player name</li>
                         <li>player name</li>
                         <li>player name</li>
