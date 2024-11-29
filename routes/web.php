@@ -23,6 +23,9 @@ Route::get('/teams', function () {
 Route::get('/player', function () {
     return view('player');
 });
+Route::get('/matches', function () {
+    return view('matches');
+});
 
 
 Route::get('/dashboard', function () {

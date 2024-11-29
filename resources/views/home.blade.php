@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="{{ asset('style/style.css') }}" />
-    <title>schoolvoetbal</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/">home</a>
-            <a href="teams">teams</a>
-            <a href="player">//</a>
-            <img src="{{ asset('style/img/logoBlauw.png') }}" alt="">
-
-        </nav>
-        logout
-    </header>
+<x-layouts.app title="Home">
     <main>
         <h1>School voetbal</h1>
         <div class="wrapper">
@@ -36,15 +17,15 @@
                 </div>
 
 
-                <a href="wedstrijden">
+                <a href="matches">
                     <h2>wedstrijden</h2>
-                    <ul>
+                    <ol>
                         <li>1 team vs team</li>
                         <li>2 team vs team</li>
                         <li>3 team vs team</li>
                         <li>4 team vs team</li>
                         <li>5 team vs team</li>
-                    </ul>
+                    </ol>
                 </a>
             </div>
             <div class="personalInfo">
@@ -68,6 +49,5 @@
             </div>
         </div>
     </main>
-</body>
-</html>
+</x-layouts.app>
 
