@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id()->unsigned();
             $table->foreignId('creator_id')->references('id')->on('users');
             $table->string('name');
-            $table->integer('points');
+            $table->integer('points')->nullable();
             $table->timestamps();
         });
     }
