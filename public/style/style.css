@@ -30,4 +30,17 @@ nav a {
     border: #fff 6px solid;
     height: 60px;
 }
+main{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    height: 50px;
+    width: 100px;
+}
 

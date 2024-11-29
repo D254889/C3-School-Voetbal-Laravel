@@ -18,45 +18,50 @@
         logout
     </header>
     <main>
-        <div class="wrapper">
-            <h1>School voetbal</h1>
-            <div class="topTeams">
-                <h2>Top 5</h2>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
-            </div>
-            <img src={{ asset('style/img/soccerfield.png') }} alt="voetbalVeld">
+        <div class="puiblicInfo">
+            <div class="wrapper">
+                <h1>School voetbal</h1>
+                <div class="topTeams">
+                    <h2>Top 5</h2>
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
 
-            <a href="wedstrijden">
-                <h2>wedstrijden</h2>
-                <ul>
-                    <li>1 team vs team</li>
-                    <li>2 team vs team</li>
-                    <li>3 team vs team</li>
-                    <li>4 team vs team</li>
-                    <li>5 team vs team</li>
-                </ul>
-            </a>
-            //if logged in
-            <div class="team">
-                <h2>team</h2>
-                <ul>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                    <li>player name</li>
-                </ul>
+
+                <a href="wedstrijden">
+                    <h2>wedstrijden</h2>
+                    <ul>
+                        <li>1 team vs team</li>
+                        <li>2 team vs team</li>
+                        <li>3 team vs team</li>
+                        <li>4 team vs team</li>
+                        <li>5 team vs team</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="personalInfo">
+                //if logged in
+                <img src={{ asset('style/img/soccerfield.png') }} alt="voetbalVeld">
+                <div class="team">
+                    <h2>team</h2>
+                    <ul>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                        <li>player name</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
