@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id()->unsigned();
-            $table->foreignId('team_id')->unsigned();
             $table->string('name');
             $table->text("email");
             $table->text("password");

@@ -12,12 +12,12 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('matches', function (Blueprint $table) {
-            $table->id()->unsigned();
-            $table->foreignId('team1_id')->unsigned();
-            $table->foreignId('team2_id')->unsigned();
-            $table->foreignId('referee_id')->unsigned();
-            $table->integer('team1_score')->unsigned();
-            $table->integer('team2_score')->unsigned();
+            $table->id();
+            $table->foreignId('team1_id')->references('id')->on('teams');
+            $table->foreignId('teams2_id')->references('id')->on('teams');
+            $table->foreignId('referee_id')->references('id')->on('teams');
+            $table->integer('team1_score');
+            $table->integer('team2_score');
             $table->text('field');
             $table->text('time');
             $table->timestamps();
