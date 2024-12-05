@@ -16,16 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name("homepage");
+
 Route::get('/teams', function () {
-    return view('teams');
-});
-Route::get('/player', function () {
-    return view('player');
-});
-Route::get('/matches', function () {
-    return view('matches');
-});
+    return view('home');
+})->name("teams");
+
+Route::get('/wedstrijdschema', function () {
+    return view('home');
+})->name("wedstrijdschema");
+
+
 
 
 Route::get('/dashboard', function () {

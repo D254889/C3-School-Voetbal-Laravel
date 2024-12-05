@@ -1,8 +1,5 @@
 <nav>
-    <a href="/">home</a>
-    <a href="teams">teams</a>
-    <a href="player">//</a>
-    <img src="{{ asset('style/img/logoBlauw.png') }}" alt="">
-
+    <a href="{{ route('homepage') }}">Homepage</a>
+    <a href="{{ route('teams') }}">Teams</a>
+    <a href="{{ route('wedstrijdschema') }}">Wedstrijdschema</a>
 </nav>
-<i class="fa-solid fa-right-from-bracket"></i>

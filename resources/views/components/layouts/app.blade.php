@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-
-        <x-navbar/>
-
+        <x-navbar />
     </header>
-
     <main>
-        {{ $slot }}
+        {{$slot}}
     </main>
+    <footer>
+        <x-footer />
+    </footer>
 </body>
 </html>
