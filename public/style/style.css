@@ -67,6 +67,11 @@ footer {
     bottom: 0; /* Zet de footer tegen de onderkant van het scherm */
 }
 
+.h1title{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
