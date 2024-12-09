@@ -26,6 +26,20 @@ Route::get('/wedstrijdschema', function () {
     return view('home');
 })->name("wedstrijdschema");
 
+Route::get('/schemapage', function () {
+    return view('home');
+})->name("schemapage");
+
+Route::get('/generationpage', function () {
+    return view('home');
+})->name("generationpage");
+
+Route::get('/scorespage', function () {
+    return view('home');
+})->name("scorespage");
+
+
+
 
 
 

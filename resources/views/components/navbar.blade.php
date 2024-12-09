@@ -5,9 +5,9 @@
     <div class="dropdown">
         <a href="{{ route('wedstrijdschema') }}">Wedstrijdschema</a>
         <div class="dropdown-content">
-            <a href="#">Schema</a>
-            <a href="#">Genereren</a>
-            <a href="#">Scores</a>
+            <a href="schemapage">Schema</a>
+            <a href="generationpage">Genereren</a>
+            <a href="scorespage">Scores</a>
         </div>
     </div>
     <script>
