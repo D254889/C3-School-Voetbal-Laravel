@@ -72,6 +72,15 @@ footer {
     justify-content: center;
 }
 
+.logoFoto{
+    display: flex;
+    justify-content: center;
+}
+.logoFoto img{
+    margin: 2%;
+    border-radius: 20%;
+}
+
 
 
 

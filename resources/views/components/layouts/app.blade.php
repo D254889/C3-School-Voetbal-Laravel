@@ -13,6 +13,8 @@
         <x-navbar />
     </header>
     <main>
+        <div class="h1title"><h1>Schoolvoetbal</h1></div>
+        <div class="logoFoto"><img src="{{asset('/style/img/logoBlauw.png')}}"/></div>
         {{$slot}}
     </main>
     <footer>
