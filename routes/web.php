@@ -38,11 +38,6 @@ Route::get('/scorespage', function () {
     return view('home');
 })->name("scorespage");
 
-
-
-
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
