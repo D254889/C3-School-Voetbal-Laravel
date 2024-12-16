@@ -14,7 +14,6 @@
         <x-navbar />
     </header>
     <main>
-
         {{$slot}}
     </main>
     <footer>
