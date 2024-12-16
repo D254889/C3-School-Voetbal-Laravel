@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Team;
+use Illuminate\Support\Facades\Auth;
 
 class TeamsController extends Controller
 {
@@ -23,13 +24,14 @@ class TeamsController extends Controller
         $newTeam = new Team;
         $newTeam->name = $request->name;
         $newTeam->points = $request->points;
+        $newTeam->creator_id = Auth::user()->id;
         $newTeam->save();
         return redirect()->route('teams.index');
     }
 
     public function edit(Team $team)
     {
-        return view('teams.edit')->with('teams', $team);
+        return view('teams.edit')->with('team', $team);
     }
 
     public function update(Teams $team, Request $request)

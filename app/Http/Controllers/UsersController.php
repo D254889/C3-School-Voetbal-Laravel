@@ -26,7 +26,7 @@ class UsersController extends Controller
         $newUser->age = $request->age;
         $newUser->email = $request->email;
         $newUser->save();
-        return redirect()->route('customers.index');
+        return redirect()->route('users.index');
     }
 
     public function edit(User $user)
