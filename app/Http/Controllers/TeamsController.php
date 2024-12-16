@@ -31,7 +31,7 @@ class TeamsController extends Controller
 
     public function edit(Team $team)
     {
-        return view('teams.edit')->with('teams', $team);
+        return view('teams.edit')->with('team', $team);
     }
 
     public function update(Teams $team, Request $request)

@@ -2,7 +2,7 @@
     <form action="{{route('teams.update', $team->id)}}" method="POST">
         @csrf
         <label for="name">TeamName: </label>
-        <input type="text" name="name" value="{{$team,->name}}"/>
+        <input type="text" name="name" value="{{$team->name}}"/>
         <br>
         <label for="points">Points: </label>
         <input type="number" name="points" value="{{$team->points}}"/>
