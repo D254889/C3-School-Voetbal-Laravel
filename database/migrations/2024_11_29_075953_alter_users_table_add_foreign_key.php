@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('users', function($table) {
-            $table->foreignId('team_id')->references('id')->on('teams');
+        Schema::table('users', function(Blueprint $table) {
+            $table->foreignId('team_id')->references('id')->on('teams')->nullable()->default(null);
         });
     }
 

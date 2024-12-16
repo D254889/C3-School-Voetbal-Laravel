@@ -1,6 +1,7 @@
 <nav>
     <a href="{{ route('homepage') }}">Homepage</a>
-    <a href="{{ route('teams') }}">Teams</a>
+    <a href="{{ route('teams.index') }}">Teams</a>
+
 
     <div class="dropdown">
         <a href="{{ route('wedstrijdschema') }}">Wedstrijdschema</a>
@@ -19,4 +20,16 @@
             });
         });
     </script>
+            <div class="logintext">
+                @guest
+                    <x-nav-link href="login">Login</x-nav-link>
+                    <x-nav-link href="register">Register</x-nav-link>
+                @endguest
+                @auth
+                        <form action="{{route('logout')}}" method="POST">
+                            @csrf
+                            <button type="submit">Logout</button>
+                        </form>
+                @endauth
+            </div>
 </nav>

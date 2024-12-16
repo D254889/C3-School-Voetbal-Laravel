@@ -23,6 +23,7 @@ class TeamsController extends Controller
         $newTeam = new Team;
         $newTeam->name = $request->name;
         $newTeam->points = $request->points;
+        $newTeam->creator_id = auth()->id;
         $newTeam->save();
         return redirect()->route('teams.index');
     }

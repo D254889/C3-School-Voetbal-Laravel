@@ -13,6 +13,7 @@
     <header>
         <x-navbar />
     </header>
+    <main>
 
         {{$slot}}
     </main>
