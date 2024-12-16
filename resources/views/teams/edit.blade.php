@@ -4,7 +4,7 @@
         <label for="name">TeamName: </label>
         <input type="text" name="name" value="{{$team,->name}}"/>
         <br>
-        <label for="points">Point: </label>
+        <label for="points">Points: </label>
         <input type="number" name="points" value="{{$team->points}}"/>
         <br>
         <input type="submit" value="Versturen">

@@ -15,6 +15,11 @@
                 <td>
                     <a href="{{route('teams.edit', $team->id)}}">
                         <button>Edit</button>
+                        <form action="{{route('teams.destroy', $team->id)}}" method="post">
+                            @csrf
+                            @method('delete')
+                            <input type="submit" value="Verwijderen">
+                        </form>
                     </a>
                 </td>
             </tr>
